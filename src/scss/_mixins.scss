@@ -1,0 +1,31 @@
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;
+@mixin flex-spaced {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin button-hover{
+    &:hover {
+     opacity: .7;
+     transition: all ease .3s;
+     background-color: $hover-color;
+            }
+            
+    &:hover img {
+    transform: translateX(5px) translateY(-5px);
+    transition: all ease .3s;
+    }
+
+}
+
