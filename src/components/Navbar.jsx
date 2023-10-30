@@ -8,17 +8,17 @@ import twitter from '../assets/Crito - Design and Images/images/twitter.svg'
 import linkedin from '../assets/Crito - Design and Images/images/in.svg'
 import instagram from '../assets/Crito - Design and Images/images/instagram.svg'
 import arrow from '../assets/Crito - Design and Images/images/arrow.svg'
-
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   return <>
      <header className="primary-header">
       <div className="container section-container">
-        <a href="#" className="logo">
+        <Link to='/' className="logo">
           <img
             src={logo}
             alt="Crito logo"
           />
-        </a>
+        </Link>
         <div className="header_container">
           <div className="contact">
             <ul className="contact_list">
@@ -74,16 +74,16 @@ const Navbar = () => {
           <nav className="nav">
             <ul className="nav_list">
               <li>
-                <a href="index.html">Home</a>
+                <Link  to='/'>Home</Link>
               </li>
               <li>
-                <a href="">Services</a>
+                <Link to='#'>Services</Link>
               </li>
               <li>
-                <a href="">News</a>
+                <Link to='/articles'>News</Link>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <Link to='/contact'>Contact</Link>
               </li>
               <button>
                 Login
