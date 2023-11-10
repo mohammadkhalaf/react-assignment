@@ -1,18 +1,110 @@
 @import "variables";
 @import "mixins";
-.article-container{
-    @include flex-spaced;
-    .article-right{
-        border: 1px solid orange;
+.article-container {
+  //   @include flex-spaced;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+  .article-left {
+    max-width: 82rem;
+    h1 {
+      font-size: $fs-800;
+      font-weight: bold;
+      max-width: 60rem;
+      line-height: 5rem;
+      margin-bottom: 3rem;
     }
-    .article-left{
-        .search-input{
-           position: relative;
-        }
-        .search-icon{
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    .subtitle {
+      font-size: $fs-700;
+      display: flex;
+      align-items: center;
+      span {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: $light-orange;
+        display: inline-block;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
     }
+    .img-container {
+      margin-top: 7rem;
+    }
+    .article-content {
+      color: $dark-gray;
+      font-size: $fs-500;
+      line-height: 3rem;
+      width: 90%;
+    }
+  }
+  .article-right {
+    width: 42rem;
+
+    .search-input {
+      position: relative;
+      margin-bottom: $size-800;
+      input {
+        background-color: $light-gray;
+        width: 100%;
+        border-radius: $radius;
+        height: 5rem;
+        border: none;
+        &::placeholder {
+          color: $dark-gray;
+          padding-left: 4rem;
+          font-size: $fs-500;
+        }
+      }
+    }
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 3rem;
+      transform: translate(-50%, -50%);
+      width: $fs-500;
+      height: $fs-500;
+    }
+    .recent-articles {
+      border: 1px solid $light-gray;
+      padding: $size-800;
+      margin-bottom: $size-800;
+      h3 {
+        font-size: $fs-700;
+        padding-bottom: $size-600;
+      }
+      .recent-articles-item {
+        font-size: $fs-500;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        border-bottom: 1px $light-gray solid;
+        padding-bottom: 1rem;
+        margin-bottom: $size-600;
+        line-height: 2.6rem;
+        span {
+          color: $dark-gray;
+          margin-top: $size-500;
+          font-weight: normal;
+        }
+      }
+    }
+    .categories {
+      border: 1px solid $light-gray;
+      padding: $size-800;
+      h3 {
+        font-size: $fs-700;
+        padding-bottom: $size-600;
+        margin-bottom: $size-500;
+      }
+      .category-item {
+        font-size: $fs-500;
+        font-weight: bold;
+        margin-bottom: $size-500;
+        span {
+          color: $dark-gray;
+        }
+      }
+    }
+  }
 }
