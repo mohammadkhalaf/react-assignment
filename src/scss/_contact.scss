@@ -87,6 +87,20 @@
     background-color: $light-orange;
     @include button-hover;
   }
+  .error-message {
+    color: red;
+    font-size: $fs-500;
+    margin-left: $size-600;
+    margin-bottom: $size-500;
+    margin-top: -$size-400;
+  }
+  .success {
+    color: green;
+    font-size: $fs-500;
+    margin-left: $size-600;
+    margin-bottom: $size-500;
+    text-align: center;
+  }
 }
 .map-section {
   width: 100%;
