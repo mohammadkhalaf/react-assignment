@@ -52,7 +52,6 @@ header .container .header_container .contact {
   padding-bottom: 1.5rem;
   border-bottom: 0.1rem solid rgba(25, 25, 25, 0.1);
   margin-bottom: 0.75rem;
-  border: 2px solid red;
 }
 
 header .container .header_container .contact .contact_list {

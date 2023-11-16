@@ -733,6 +733,7 @@ header {
 }
 .blog {
   padding: $size-large 0;
+
   .articles_wrapper {
     .blog_header-wrapper {
       margin-bottom: $size-800;
@@ -819,7 +820,7 @@ header {
     .image_slider {
       display: flex;
       justify-content: center;
-      margin: $size-500 0rem;
+      margin: $size-800 0rem;
 
       .slider {
         height: 10px;

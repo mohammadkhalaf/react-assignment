@@ -40,7 +40,7 @@ const Article = () => {
   const year = date.getFullYear();
   const month = date.toLocaleString("default", { month: "short" });
   const { id } = useParams();
-  console.log(id);
+
   useEffect(() => {
     const getArticle = async () => {
       try {
@@ -57,7 +57,7 @@ const Article = () => {
     };
     getArticle();
   }, []);
-  console.log(article);
+
   if (loading) {
     return <h1>loading...</h1>;
   }
@@ -95,7 +95,10 @@ const Article = () => {
                   <ul>
                     {recentArticles.map((article) => {
                       return (
-                        <li className="recent-articles-item">
+                        <li
+                          className="recent-articles-item"
+                          key={article.title}
+                        >
                           {article.title} <span>{article.published}</span>
                         </li>
                       );
@@ -107,7 +110,7 @@ const Article = () => {
                   <ul>
                     {categories.map((category) => {
                       return (
-                        <li className="category-item">
+                        <li className="category-item" key={category.title}>
                           {category.title} - <span>{category.numOfPosts}</span>
                         </li>
                       );

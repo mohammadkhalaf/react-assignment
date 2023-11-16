@@ -38,7 +38,6 @@ const Form = () => {
         );
         const data = response.data;
         setSuccessMsg(data);
-        console.log("sent");
         setValues({ name: "", email: "", message: "" });
       }
     } catch (error) {
