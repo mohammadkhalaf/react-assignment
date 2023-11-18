@@ -1,0 +1,46 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.modal {
+  background: #fff;
+  padding: $size-700;
+  width: 40rem;
+  max-width: 80%;
+
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  .nav_list {
+    text-align: center;
+
+    li {
+      cursor: pointer;
+      font-size: $fs-500;
+      margin-right: $size-600;
+      margin-bottom: $size-500;
+      font-weight: bold;
+    }
+
+    button {
+      margin-left: auto;
+      background-color: $light-orange;
+      line-height: 1.6rem;
+      width: 12rem;
+
+      @include button-hover;
+    }
+  }
+}
+
+/* Add any other styles as needed */

@@ -1,35 +1,7 @@
 import arrow from "../assets/Crito - Design and Images/images/arrow.svg";
-import arrowwhite from "../assets/Crito - Design and Images/images/arrrowwhite.svg";
-import Kristinepalmer from "../assets/Crito - Design and Images/images/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg";
-import MarkAburi from "../assets/Crito - Design and Images/images/itay-verchik-6ZKGBzrDd3I-unsplash copy.jpg";
-import kimperlyhansen from "../assets/Crito - Design and Images/images/christina-wocintechchat-com-Zpzf7TLj_gA-unsplash copy.jpg";
-import justinwilloman from "../assets/Crito - Design and Images/images/the-connected-narrative-N8lRH2uxih4-unsplash copy.jpg";
+import { members } from "../constants";
 import Slider from "./Slider";
-import Stars from "./Stars";
 import Testimonial from "./Testimonial";
-
-const members = [
-  {
-    name: "Kristine Palmer",
-    img: Kristinepalmer,
-    jobTitle: "Chef Operation Officer",
-  },
-  {
-    name: "Mark Aubri",
-    img: MarkAburi,
-    jobTitle: "Senior Consultant",
-  },
-  {
-    name: "Kimberly Hansen",
-    img: kimperlyhansen,
-    jobTitle: "Senior Consultant",
-  },
-  {
-    name: "Justin Willoman",
-    img: justinwilloman,
-    jobTitle: "Senior Tech Consultant",
-  },
-];
 
 const Team = () => {
   return (

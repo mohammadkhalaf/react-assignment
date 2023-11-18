@@ -1,27 +1,6 @@
-import growbusiness from "../assets/Crito - Design and Images/images/adeolu-eletu-E7RLgUjjazc-unsplash.jpg";
-import responsivewebsite from "../assets/Crito - Design and Images/images/marek-levak-zANXcXyByos-unsplash.jpg";
-import educate from "../assets/Crito - Design and Images/images/oli-dale-xjSkI_seiZY-unsplash.jpg";
-import businessinsight from "../assets/Crito - Design and Images/images/carlos-muza-hpjSkU2UYSU-unsplash.jpg";
 import arrow from "../assets/Crito - Design and Images/images/arrow.svg";
 import arrowWhite from "../assets/Crito - Design and Images/images/arrrowwhite.svg";
-const projectCards = [
-  {
-    title: "Grow your business",
-    img: growbusiness,
-  },
-  {
-    title: "Why your client needs a responsive website",
-    img: responsivewebsite,
-  },
-  {
-    title: "Educate your employees to get better results",
-    img: educate,
-  },
-  {
-    title: " Business Insight is an important piece of your business",
-    img: businessinsight,
-  },
-];
+import { projectCards } from "../constants";
 
 const Projects = () => {
   return (

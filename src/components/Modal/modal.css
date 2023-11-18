@@ -1,0 +1,48 @@
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.modal {
+  background: #fff;
+  padding: 3rem;
+  width: 40rem;
+  max-width: 80%;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.modal .nav_list {
+  text-align: center;
+}
+.modal .nav_list li {
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+.modal .nav_list button {
+  margin-left: auto;
+  background-color: #f9d783;
+  line-height: 1.6rem;
+  width: 12rem;
+}
+.modal .nav_list button:hover {
+  opacity: 0.7;
+  transition: all ease 0.3s;
+  background-color: #dda00b;
+}
+.modal .nav_list button:hover img {
+  transform: translateX(5px) translateY(-5px);
+  transition: all ease 0.3s;
+}
+
+/* Add any other styles as needed *//*# sourceMappingURL=modal.css.map */

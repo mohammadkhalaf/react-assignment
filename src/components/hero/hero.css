@@ -1,0 +1,69 @@
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+}
+@media (max-width: 1140px) {
+  .banner {
+    grid-template-columns: 1fr;
+  }
+}
+.banner .image-container img {
+  max-width: 100%;
+}
+.banner .content h1 {
+  font-size: 8rem;
+  margin-bottom: 3rem;
+  line-height: 10rem;
+  text-align: left;
+  margin-top: 5rem;
+}
+@media (max-width: 1200px) {
+  .banner .content h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+}
+.banner .content p {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: rgba(25, 25, 25, 0.7);
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  line-height: 3.2rem;
+  text-align: left;
+}
+.banner .content .buttons-containers {
+  display: flex;
+}
+.banner .content .buttons-containers button {
+  padding: 1.5rem 3rem;
+}
+.banner .content .buttons-containers button:first-child {
+  background-color: #f9d783;
+}
+.banner .content .buttons-containers button:nth-child(2) {
+  border: 0.1rem solid #191919;
+  margin-left: 2rem;
+}
+.banner .content .buttons-containers button:hover {
+  opacity: 0.7;
+  transition: all ease 0.3s;
+  background-color: #dda00b;
+}
+.banner .content .buttons-containers button:hover img {
+  transform: translateX(5px) translateY(-5px);
+  transition: all ease 0.3s;
+}
+.banner .line-container {
+  bottom: 0;
+  left: 0;
+}
+.banner .line-container img {
+  width: 70%;
+}
+@media (max-width: 1200px) {
+  .banner .line-container img {
+    width: 50%;
+  }
+}/*# sourceMappingURL=hero.css.map */

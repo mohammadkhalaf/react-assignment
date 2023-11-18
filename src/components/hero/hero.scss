@@ -1,0 +1,67 @@
+@import "../../scss//variables";
+@import "../../scss/mixins";
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-top: $size-900;
+  @media (max-width: 1140px) {
+    grid-template-columns: 1fr;
+  }
+  .image-container {
+    img {
+      max-width: 100%;
+    }
+  }
+  .content {
+    h1 {
+      font-size: $fs-900;
+      margin-bottom: $size-700;
+      line-height: 10rem;
+      text-align: left;
+      margin-top: $size-900;
+      @media (max-width: 1200px) {
+        font-size: 7rem;
+        line-height: 7rem;
+      }
+    }
+
+    p {
+      font-size: $fs-700;
+      line-height: 3.2rem;
+      color: $dark-gray;
+      letter-spacing: 0.1rem;
+      margin-bottom: $size-700;
+      line-height: 3.2rem;
+      text-align: left;
+    }
+    .buttons-containers {
+      display: flex;
+
+      button {
+        padding: $size-500 $size-700;
+        &:first-child {
+          background-color: $light-orange;
+        }
+        &:nth-child(2) {
+          border: 0.1rem solid $color-black;
+          margin-left: $size-600;
+        }
+        @include button-hover;
+      }
+    }
+  }
+  .line-container {
+    bottom: 0;
+    left: 0;
+    img {
+      width: 70%;
+    }
+    @media (max-width: 1200px) {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}

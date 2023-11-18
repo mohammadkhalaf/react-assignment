@@ -82,6 +82,13 @@ textarea:focus {
   margin-bottom: $fs-600;
   font-weight: bold;
 }
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: $fs-700;
+}
 
 @media (max-width: 1180px) {
   html {

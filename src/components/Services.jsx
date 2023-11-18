@@ -1,29 +1,6 @@
-import arrowRight from "../assets/Crito - Design and Images/images/Arrow right up.svg";
 import arrow from "../assets/Crito - Design and Images/images/arrow.svg";
 import lines from "../assets/Crito - Design and Images/images/background-lines-right.svg";
-const servicesArray = [
-  {
-    title: "Business Advice",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elitVero  aspernatur accusamus praesentium?",
-    icon: arrowRight,
-  },
-  {
-    title: "Startup Business",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elitVero  aspernatur accusamus praesentium?",
-    icon: arrowRight,
-  },
-  {
-    title: "Financial Advice",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elitVero  aspernatur accusamus praesentium?",
-    icon: arrowRight,
-  },
-  {
-    title: "Risk Management",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elitVero  aspernatur accusamus praesentium?",
-    icon: arrowRight,
-  },
-];
-
+import { servicesArray } from "../constants";
 const Services = () => {
   return (
     <>

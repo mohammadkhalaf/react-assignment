@@ -1,31 +1,5 @@
 import Stars from "./Stars";
-import casandrawarren from "../assets/Crito - Design and Images/images/vince-veras-AJIqZDAUD7A-unsplash.jpg";
-import amandatullig from "../assets/Crito - Design and Images/images/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg";
-import jack from "../assets/Crito - Design and Images/images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg";
-const tesimonialArray = [
-  {
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Repellendus necessitatibus perferendis culpa, autem magni  accusantium iste adipisci quae impedit, saepe temporibus dolorum mollitia.",
-    customerName: "Cassandra Warren",
-    customerJob: "Business Manager, Dorfus",
-    customerImg: casandrawarren,
-  },
-  {
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Repellendus necessitatibus perferendis culpa, autem magni  accusantium iste adipisci quae impedit, saepe temporibus dolorum mollitia.",
-    customerName: "Amanda Tulling",
-    customerJob: "Senior Developer, Square",
-    customerImg: amandatullig,
-  },
-  {
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit Repellendus necessitatibus perferendis culpa, autem magni  accusantium iste adipisci quae impedit, saepe temporibus dolorum mollitia.",
-    customerName: "Jack McDogglas",
-    customerJob: "Key Account Manager, Gobona",
-    customerImg: jack,
-  },
-];
-
+import { tesimonialArray } from "../constants.js";
 const Testimonial = () => {
   return (
     <>

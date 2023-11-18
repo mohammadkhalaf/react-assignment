@@ -1,32 +1,5 @@
-import process from "../assets/Crito - Design and Images/images/process.svg";
-import strategicplanning from "../assets/Crito - Design and Images/images/strategicplaning.svg";
-import experience from "../assets/Crito - Design and Images/images/experience.svg";
-import ai from "../assets/Crito - Design and Images/images/AI.svg";
+import { chooseUs } from "../constants";
 import twowomen from "../assets/Crito - Design and Images/images/amy-hirschi-K0c8ko3e6AA-unsplash.jpg";
-
-const chooseUp = [
-  {
-    title: "Process Excellen",
-    img: process,
-    desc: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    title: "Strategic Planning",
-    img: strategicplanning,
-    desc: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    title: "Experience Design",
-    img: experience,
-    desc: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    title: "Artificial Intelligence",
-    img: ai,
-    desc: "Lorem ipsum dolor sit amet consectetur.",
-  },
-];
-
 const WhyChoosingUs = () => {
   return (
     <>
@@ -36,7 +9,7 @@ const WhyChoosingUs = () => {
           <h2>Why We Are The Best Business Consulting Agency</h2>
           <div className="benefits_list">
             <ul>
-              {chooseUp.map((item) => {
+              {chooseUs.map((item) => {
                 return (
                   <li key={item.title}>
                     <div className="img_wrapper">

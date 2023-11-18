@@ -1,32 +1,5 @@
-import businessadvice from "../../assets/Crito - Design and Images/images/financialadvice.svg";
-import startup from "../../assets/Crito - Design and Images/images/startup.svg";
-import financialadvice from "../../assets/Crito - Design and Images/images/financialadvice.svg";
-import riskmanagement from "../../assets/Crito - Design and Images/images/riskmanagment.svg";
+import { featuresArray } from "../../constants";
 import arrow from "../../assets/Crito - Design and Images/images/arrow.svg";
-
-const featuresArray = [
-  {
-    title: "Business Advice",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, veritatis.",
-    img: businessadvice,
-  },
-  {
-    title: "Startup business",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, veritatis.",
-    img: startup,
-  },
-  {
-    title: "Financial Advice",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, veritatis.",
-    img: financialadvice,
-  },
-  {
-    title: "Risk Management",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, veritatis.",
-    img: riskmanagement,
-  },
-];
-
 const Features = () => {
   return (
     <>

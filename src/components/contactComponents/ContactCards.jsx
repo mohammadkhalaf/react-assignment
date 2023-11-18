@@ -25,7 +25,7 @@ const ContactCards = () => {
       <section className="cards section-container">
         {cards.map((card) => {
           return (
-            <div className="card">
+            <div className="card" key={card.title}>
               <div className="icon_container">
                 <img src={card.img} alt={`${card.title} icon`} />
               </div>
@@ -33,7 +33,7 @@ const ContactCards = () => {
                 <p className="card_title">{card.title}</p>
                 <div className="card_footer">
                   {card.cardInfo.map((info) => {
-                    return <p>{info}</p>;
+                    return <p key={info}>{info}</p>;
                   })}
                 </div>
               </div>

@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ArticlesWrapper from "../components/articleComponents/ArticlesWrapper";
 import Blog from "../components/Blog";
 import Footer from "../components/Footer";
 import { FiSearch } from "react-icons/fi";
+import Loader from "../components/Loader";
 const recentArticles = [
   {
     title: "How to Blow Through Capital At an Incredible Rate",
@@ -40,6 +40,7 @@ const Article = () => {
   const year = date.getFullYear();
   const month = date.toLocaleString("default", { month: "short" });
   const { id } = useParams();
+  console.log(article);
 
   useEffect(() => {
     const getArticle = async () => {
@@ -59,7 +60,7 @@ const Article = () => {
   }, []);
 
   if (loading) {
-    return <h1>loading...</h1>;
+    return <Loader />;
   }
 
   return (
@@ -83,6 +84,37 @@ const Article = () => {
                     />
                   </div>
                   <p className="article-content">{article.content}</p>
+                  <p className="article-content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sint iste eligendi beatae accusamus recusandae nesciunt
+                    veritatis nostrum ipsum aperiam! Vitae numquam obcaecati
+                    illum magnam voluptatem quo unde recusandae odio, animi
+                    aspernatur repellat nulla, ab expedita rerum maiores iusto
+                    nemo assumenda vero. Ullam incidunt iusto, deleniti quidem
+                    blanditiis inventore qui quam tempore velit nostrum! Ut
+                    doloremque modi, odit temporibus fugit dolorem officiis!
+                    Voluptatum eius cumque sint laboriosam, sed amet quos
+                    laudantium enim quibusdam debitis dignissimos nulla magnam!
+                    Eum laboriosam ullam pariatur in et ipsa distinctio odio,
+                    nulla hic. Nostrum ullam ad nemo consequatur laboriosam quas
+                    eos porro sequi. Repellat, impedit eaque?
+                  </p>
+
+                  <p className="article-content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sint iste eligendi beatae accusamus recusandae nesciunt
+                    veritatis nostrum ipsum aperiam! Vitae numquam obcaecati
+                    illum magnam voluptatem quo unde recusandae odio, animi
+                    aspernatur repellat nulla, ab expedita rerum maiores iusto
+                    nemo assumenda vero. Ullam incidunt iusto, deleniti quidem
+                    blanditiis inventore qui quam tempore velit nostrum! Ut
+                    doloremque modi, odit temporibus fugit dolorem officiis!
+                    Voluptatum eius cumque sint laboriosam, sed amet quos
+                    laudantium enim quibusdam debitis dignissimos nulla magnam!
+                    Eum laboriosam ullam pariatur in et ipsa distinctio odio,
+                    nulla hic. Nostrum ullam ad nemo consequatur laboriosam quas
+                    eos porro sequi. Repellat, impedit eaque?
+                  </p>
                 </div>
               </div>
               <div className="article-right">

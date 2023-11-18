@@ -1,35 +1,7 @@
-import womenImage from "../assets/Crito - Design and Images/images/linkedin-sales-solutions-Mis5fyJi7Q0-unsplash.jpg";
-import chatgptimg from "../assets/Crito - Design and Images/images/emiliano-vittoriosi-vEN1bsdSjxM-unsplash.jpg";
-import books from "../assets/Crito - Design and Images/images/kobu-agency-ipARHaxETRk-unsplash.jpg";
 import arrow from "../assets/Crito - Design and Images/images/arrow.svg";
 import { Link } from "react-router-dom";
 import Slider from "./Slider";
-const articlesArray = [
-  {
-    day: "25",
-    month: "Mar",
-    category: "Business",
-    img: womenImage,
-    title: "How to use digitalization in the classroom",
-    desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quidem tempore fuga!",
-  },
-  {
-    day: "17",
-    month: "Mar",
-    category: "Business",
-    img: chatgptimg,
-    title: "How to implement chat gpt in your projects",
-    desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quidem tempore fuga!",
-  },
-  {
-    day: "13",
-    month: "Mar",
-    category: "Business",
-    img: books,
-    title: "The guide to support modern css design",
-    desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quidem tempore fuga!",
-  },
-];
+import { articlesArray } from "../constants";
 
 const Blog = () => {
   return (

@@ -5,6 +5,10 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10rem;
+  @media screen and (max-width: "1155px") {
+    flex-direction: column;
+  }
+
   .article-left {
     max-width: 82rem;
     h1 {
@@ -40,20 +44,28 @@
   }
   .article-right {
     width: 42rem;
+    margin-top: 17rem;
+
+    @media screen and (max-width: "1155px") {
+      margin-top: 5rem;
+    }
 
     .search-input {
       position: relative;
       margin-bottom: $size-800;
+
       input {
         background-color: $light-gray;
         width: 100%;
         border-radius: $radius;
         height: 5rem;
         border: none;
+        padding-left: 4rem;
+        font-size: $fs-600;
         &::placeholder {
           color: $dark-gray;
-          padding-left: 4rem;
-          font-size: $fs-500;
+
+          font-size: $fs-600;
         }
       }
     }
